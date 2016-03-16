@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+\begin{figure}
+\includegraphics{"images/test"}
+\caption{Test Image}
+\label{fig:test}
+\end{figure}
+Figure \ref{fig:test} shows a testing image
+
+% using the float
+% h (here) - same location
+% t (top) - top of page
+% b (bottom) - bottom of page
+% p (page) - on an extra page
+% ! (override) - will force the specified location
+% Setting the float by adding [h!] behind the figure environment \begin tag will force the figure to be shown at the location in the document. 
+
+\begin{figure}[p!]
+\includegraphics{"images/cute-girl"}
+\caption{Test Image}
+\label{fig:cute-girl}
+\end{figure}
+
+\end{document}
