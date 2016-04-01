@@ -1,0 +1,17 @@
+%% thanks https://www.sharelatex.com/learn/Bibliography_management_with_bibtex
+
+\documentclass{article}
+
+\begin{document}
+This document is an example of BibTeX using in bibliography management. Three items are cited: \textit{The \LaTeX\ Companion}book \cite{latexcompanion}, the Einstein journal paper \cite{einstein}, and the Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are \cite{latexcompanion,knuthwebsite}. 		
+	
+% medium skip	
+\medskip
+		
+% sets the bibliography style to be used in this document. The information displayed depends on the bibliography style used, even if the entry contains information about the date, author, title, publisher and abstract, the style used might only print the title and the author.
+\bibliographystyle{unsrt}
+
+% Imports the BibTeX file "sample.bib" to display the bibliography. To import several .bib files just write them comma-separated inside the braces, the file extension is not necessary. 
+\bibliography{sample}
+		
+\end{document}
